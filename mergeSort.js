@@ -1,9 +1,9 @@
 function mergeSort(a) {
   if (a.length === 1) return a;
-  const result = [];
   const mid = Math.trunc(a.length / 2);
   const left = mergeSort(a.slice(0, mid));
   const right = mergeSort(a.slice(mid));
+  const result = [];
 
   ((l, r) => {
     let i = 0,
